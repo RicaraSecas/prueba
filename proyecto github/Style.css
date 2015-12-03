@@ -1,0 +1,55 @@
+@CHARSET "ISO-8859-1";
+a{
+	background-color:black;
+	color:white;
+	transition: 2s;
+}
+a:hover {
+	background-color:white;
+	color:black;
+	transform: rotate(360deg); 
+
+}
+h1{
+color:blue;
+margin-left:800px;
+}
+img{
+	position:absolute;
+	left:300px;
+	top:300px;
+	height:120px;
+	width:120px;
+	animation-name:doritos;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+div{
+	position:relative;
+	height:860px;
+	width:860px;
+	animation-name:animacion;
+	animation-duration: 0.0001s;
+	animation-iteration-count: infinite;
+	background-image:url("dasanic.png");
+	z-index: -1;
+}
+@keyframes  animacion {
+	0% {left:100%;}
+	50% {left:0%;}
+	100% {left:90%;}
+
+}
+
+.dorito {
+-webkit-animation: cssAnimation 1s 16 ease;
+-moz-animation: cssAnimation 1s 16 ease;
+-o-animation: cssAnimation 1s 16 ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(360deg) scale(0.703) skew(-4deg) translate(162px); }
+to { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+0% {left:100%;}
+	50% {left:0%;}
+	100% {left:90%;}
+}
